@@ -1,18 +1,20 @@
 package Chapter4;
+
 import java.util.Scanner;
+
 /**
  * Program to display the information of an employee
  *
  * @author Stephen Key
  */
 public class C4_23 {
+
     /**
      * Main Method
-     * 
+     *
      * @param args arguments from command line prompt
      */
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) {
         Scanner Input = new Scanner(System.in);
         System.out.println("Enter the employee's name.");
         String name = Input.nextLine();
@@ -34,7 +36,7 @@ public class C4_23 {
         float stateTax = gross * stateRate;
         System.out.printf("    Federal Tax: $%.2f\n", fedTax);
         System.out.printf("    State Tax: $%.2f\n", stateTax);
-        System.out.printf("Total Deduction: $%.2f\n",(stateTax + fedTax));
+        System.out.printf("Total Deduction: $%.2f\n", (stateTax + fedTax));
         System.out.printf("Net Pay: $%.2f\n", (gross - (stateTax + fedTax)));
-        }
+    }
 }
