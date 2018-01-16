@@ -1,18 +1,20 @@
 package Chapter2;
+
 import java.util.Scanner;
+
 /**
  * Program to calculate the total amount of money earned
  *
  * @author Stephen Key
  */
 public class C2_5 {
+
     /**
      * Main Method
-     * 
+     *
      * @param args arguments from command line prompt
      */
-        public static void main(String[] args) 
-    {
+    public static void main(String[] args) {
         Scanner Input = new Scanner(System.in);
         System.out.println("Enter the subtotal.");
         double sub = Input.nextDouble();
